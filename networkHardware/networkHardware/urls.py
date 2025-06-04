@@ -17,6 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ..equipment import views as equipment_views
+from ..users import views as users_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/equipment', equipment_views.get_equipment_list, name='equipment-list'),
+    path('api/equipment/<uuid:id>', equipment_views.get_equipment_detail, name='equipment-detail'),
+    path('api/equipment', equipment_views.create_equipment, name='equipment-create'),
+    path('api/equipment/<uuid:id>', equipment_views.update_equipment, name='equipment-update'),
+    path('api/equipment/<uuid:id>', equipment_views.delete_equipment, name='equipment-delete'),
+
+    path('api/equipment-type', equipment_views.get_equipment_type_list, name='equipment-type-list'),
+
+    path('api/user/login', users_views.user_login, name='user-login'),
 ]
