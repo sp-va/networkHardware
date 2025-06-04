@@ -1,0 +1,26 @@
+[
+  {
+    "model": "equipment.equipmenttype",
+    "pk": "00000000-0000-0000-0000-000000000001",
+    "fields": {
+      "name": "TP-Link TL-WR74",
+      "serial_number_mask": "XXAAAAAXAA"
+    }
+  },
+  {
+    "model": "equipment.equipmenttype",
+    "pk": "00000000-0000-0000-0000-000000000002",
+    "fields": {
+      "name": "D-Link DIR-300",
+      "serial_number_mask": "NXXAAXZXaa"
+    }
+  },
+  {
+    "model": "equipment.equipmenttype",
+    "pk": "00000000-0000-0000-0000-000000000003",
+    "fields": {
+      "name": "D-Link DIR-300 E",
+      "serial_number_mask": "NAAAAXZXXX"
+    }
+  }
+]
